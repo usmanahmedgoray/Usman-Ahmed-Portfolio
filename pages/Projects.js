@@ -103,7 +103,7 @@ const Projects = () => {
             </div>
             <div className='col-span-6 sm:col-span-12'>
               <Project
-                title="PURGE_AI"
+                title="Purge AI - Multi-AI Tools"
                 summary="A professional portfolio website using React JS, Framer-motion, and Styled-components. It has smooth 
               page transitions, cool background effects, unique design and it is mobile responsive."
                 github="https://www.github.com/usmanahmedgoray"
@@ -115,7 +115,7 @@ const Projects = () => {
             </div>
             <div className='col-span-6 sm:col-span-12'>
               <Project
-                title="TextUtils"
+                title="TextUtils - A Text Counter"
                 summary="A professional portfolio website using React JS, Framer-motion, and Styled-components. It has smooth 
               page transitions, cool background effects, unique design and it is mobile responsive."
                 github="https://www.github.com/usmanahmedgoray"
