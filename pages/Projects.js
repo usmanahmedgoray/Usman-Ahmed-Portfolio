@@ -103,11 +103,11 @@ const Projects = () => {
             </div>
             <div className='col-span-6 sm:col-span-12'>
               <Project
-                title="React Portfolio Website"
+                title="PURGE_AI"
                 summary="A professional portfolio website using React JS, Framer-motion, and Styled-components. It has smooth 
               page transitions, cool background effects, unique design and it is mobile responsive."
                 github="https://www.github.com/usmanahmedgoray"
-                link="/"
+                link="https://purge-ai.vercel.app/"
                 img={Project1}
                 type="Featured project"
 
@@ -115,11 +115,11 @@ const Projects = () => {
             </div>
             <div className='col-span-6 sm:col-span-12'>
               <Project
-                title="React Portfolio Website"
+                title="TextUtils"
                 summary="A professional portfolio website using React JS, Framer-motion, and Styled-components. It has smooth 
               page transitions, cool background effects, unique design and it is mobile responsive."
                 github="https://www.github.com/usmanahmedgoray"
-                link="/"
+                link="https://texts-util.netlify.app"
                 img={Project2}
                 type="Featured project"
 
