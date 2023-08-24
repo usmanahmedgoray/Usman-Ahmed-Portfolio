@@ -125,7 +125,7 @@ const Projects = () => {
 
               />
             </div>
-            <div className='col-span-12'>
+            {/* <div className='col-span-12'>
               <Featuredprojects
                 title="Crypto Screener Application"
                 summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
@@ -158,7 +158,7 @@ const Projects = () => {
                 img={Project4}
                 type="Featured project"
               />
-            </div>
+            </div> */}
           </div>
         </Layout>
       </main>
