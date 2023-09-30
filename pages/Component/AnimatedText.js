@@ -2,7 +2,6 @@ import { motion} from 'framer-motion'
 import React from 'react'
 
 const AnimatedText = ({ text, className = "" }) => {
-    console.log(typeof(text))
     const quote = {
         initial: {
             opacity: 0
