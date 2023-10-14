@@ -19,7 +19,7 @@ export default function App({ Component, pageProps }) {
     <>
       <Head>
         <title>Usman Ahmed Goraya</title>
-        <meta name='description' content='Create the personal Portfolio site ' />
+        <meta name='description' content='My name is Usman Ahmed . I am MERN Stack Developer and always looking for new and innovative ways to bring my clients visions to life.  ' />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel='icon' href='/favicon_io/favicon.ico' />
         {/* <!-- Primary Meta Tags --> */}
@@ -29,17 +29,17 @@ export default function App({ Component, pageProps }) {
 
         {/* <!-- Open Graph / Facebook --> */}
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="/Images/Profile Picture 03.jpg" />
+        <meta property="og:url" content="/Profile Picture 03.jpg" />
         <meta property="og:title" content="Usman Ahmed Goraya" />
         <meta property="og:description" content="I am Usman Ahmed, a MERN Stack web developer. I am always looking for new and innovative ways to bring my clients visions to life." />
-        <meta property="og:image" content="/Images/Profile Picture 03.jpg" />
+        <meta property="og:image" content="/Profile Picture 03.jpg" />
 
         {/* <!-- Twitter --> */}
         <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content="/Images/Profile Picture 03.jpg" />
+        <meta property="twitter:url" content="/Profile Picture 03.jpg" />
         <meta property="twitter:title" content="Usman Ahmed Goraya" />
         <meta property="twitter:description" content="I am Usman Ahmed, a MERN Stack web developer. I am always looking for new and innovative ways to bring my clients visions to life." />
-        <meta property="twitter:image" content="/Images/Profile Picture 03.jpg" />
+        <meta property="twitter:image" content="/Profile Picture 03.jpg" />
 
         {/* <!-- Meta Tags Generated with https://metatags.io --> */}
       </Head>
