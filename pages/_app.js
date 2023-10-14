@@ -29,17 +29,17 @@ export default function App({ Component, pageProps }) {
 
         {/* <!-- Open Graph / Facebook --> */}
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://metatags.io/" />
+        <meta property="og:url" content="/Images/Profile Picture 03.jpg" />
         <meta property="og:title" content="Usman Ahmed Goraya" />
         <meta property="og:description" content="I am Usman Ahmed, a MERN Stack web developer. I am always looking for new and innovative ways to bring my clients visions to life." />
-        <meta property="og:image" content="https://metatags.io/images/meta-tags.png" />
+        <meta property="og:image" content="/Images/Profile Picture 03.jpg" />
 
         {/* <!-- Twitter --> */}
         <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content="https://metatags.io/" />
+        <meta property="twitter:url" content="/Images/Profile Picture 03.jpg" />
         <meta property="twitter:title" content="Usman Ahmed Goraya" />
         <meta property="twitter:description" content="I am Usman Ahmed, a MERN Stack web developer. I am always looking for new and innovative ways to bring my clients visions to life." />
-        <meta property="twitter:image" content="https://metatags.io/images/meta-tags.png" />
+        <meta property="twitter:image" content="/Images/Profile Picture 03.jpg" />
 
         {/* <!-- Meta Tags Generated with https://metatags.io --> */}
       </Head>
