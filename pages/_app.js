@@ -20,15 +20,35 @@ export default function App({ Component, pageProps }) {
       <Head>
         <title>Usman Ahmed Goraya</title>
         <meta name='description' content='Create the personal Portfolio site ' />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel='icon' href='/favicon_io/favicon.ico' />
+        {/* <!-- Primary Meta Tags --> */}
+        <title>Usman Ahmed Goraya</title>
+        <meta name="title" content="Usman Ahmed Goraya" />
+        <meta name="description" content="I am Usman Ahmed, a MERN Stack web developer. I am always looking for new and innovative ways to bring my clients visions to life." />
+
+        {/* <!-- Open Graph / Facebook --> */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://metatags.io/" />
+        <meta property="og:title" content="Usman Ahmed Goraya" />
+        <meta property="og:description" content="I am Usman Ahmed, a MERN Stack web developer. I am always looking for new and innovative ways to bring my clients visions to life." />
+        <meta property="og:image" content="https://metatags.io/images/meta-tags.png" />
+
+        {/* <!-- Twitter --> */}
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://metatags.io/" />
+        <meta property="twitter:title" content="Usman Ahmed Goraya" />
+        <meta property="twitter:description" content="I am Usman Ahmed, a MERN Stack web developer. I am always looking for new and innovative ways to bring my clients visions to life." />
+        <meta property="twitter:image" content="https://metatags.io/images/meta-tags.png" />
+
+        {/* <!-- Meta Tags Generated with https://metatags.io --> */}
       </Head>
       <main className={`${montserrat.variable} w-full bg-light text-dark dark:bg-dark min-h-screen`}>
         <Navbar />
         <AnimatePresence mode='wait'>
-        <Component key={router.asPath} {...pageProps} />
+          <Component key={router.asPath} {...pageProps} />
         </AnimatePresence>
-        <Footer/>
+        <Footer />
       </main>
     </>)
 }

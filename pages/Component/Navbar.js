@@ -115,13 +115,13 @@ const Navbar = () => {
                         >
                             <BsGithub />
                         </motion.a>
-                        <motion.a href="https://www.linkedin.com/in/usmanahmedgoray" target='_blank' className='text-blue-600 text-[1.7rem] mr-8 sm:mx-3 xs:mx-1 bg-light  rounded-2xl '
+                        <motion.a href="https://www.linkedin.com/in/usmanahmedgoray" target='_blank' className='text-blue-600 text-[1.8rem] mr-[1.8rem] sm:mx-3 xs:mx-1 bg-light rounded-2xl w-[27px] h-[27px] '
                             whileHover={{ y: -3 }}
                             whileTap={{ scale: 0.9 }}
                         >
                             <BsLinkedin />
                         </motion.a>
-                        <motion.a href="https://www.pinterest.com/usmanahmedgoray" target='_blank' className='text-red-600 bg-light rounded-full border-6 border-red-600 text-[1.7rem] mr-8 sm:mx-3 xs:mx-1 '
+                        <motion.a href="https://www.pinterest.com/usmanahmedgoray" target='_blank' className='text-red-600 bg-light rounded-full border-6 border-red-600 text-[1.8rem] mr-8 sm:mx-3 xs:mx-1 '
                             whileHover={{ y: -3 }}
                             whileTap={{ scale: 0.9 }}
                         >
