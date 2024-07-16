@@ -49,34 +49,34 @@ const Navbar = () => {
                     <CustomLinks href="/" title="Home" className='mr-4' />
                     <CustomLinks href="/About" title="About" className='mx-4' />
                     <CustomLinks href="/Projects" title="Projects" className='mx-4' />
-                    {/* <CustomLinks href="/Articles" title="Articles" className='ml-4' /> */}
+                    <CustomLinks href="/Articles" title="Articles" className='ml-4' />
                 </nav>
                 <nav className='flex items items-center justify-center flex-wrap'>
-                    <motion.a href="https://www.twitter.com/usmanahmedgoray" target='_blank' className='text-sky-400 text-[1.7rem] mr-8 '
+                    <motion.a href="https://www.twitter.com/usmanahmedgoray" target='_blank' className='text-sky-400 !text-[1.8rem] mr-8 '
                         whileHover={{ y: -3 }}
                         whileTap={{ scale: 0.9 }}
                     >
                         <BsTwitter />
                     </motion.a>
-                    <motion.a href="https://www.github.com/usmanahmedgoray" target='_blank' className='text-[1.7rem] mr-8'
+                    <motion.a href="https://www.github.com/usmanahmedgoray" target='_blank' className='!text-[1.8rem] mr-8'
                         whileHover={{ y: -3 }}
                         whileTap={{ scale: 0.9 }}
                     >
                         <BsGithub />
                     </motion.a>
-                    <motion.a href="https://www.linkedin.com/in/usmanahmedgoray" target='_blank' className='text-blue-600 text-[1.7rem] mr-8 dark:bg-light dark:rounded-2xl'
+                    <motion.a href="https://www.linkedin.com/in/usmanahmedgoray" target='_blank' className='text-blue-600 !text-[1.8rem] mr-8 dark:bg-light dark:rounded-2xl'
                         whileHover={{ y: -3 }}
                         whileTap={{ scale: 0.9 }}
                     >
                         <BsLinkedin />
                     </motion.a>
-                    <motion.a href="https://www.pinterest.com/usmanahmedgoray" target='_blank' className='text-red-600 text-[1.7rem] mr-8 dark:bg-light dark:rounded-full'
+                    <motion.a href="https://www.pinterest.com/usmanahmedgoray" target='_blank' className='text-red-600 !text-[1.8rem] mr-8 dark:bg-light dark:rounded-full'
                         whileHover={{ y: -3 }}
                         whileTap={{ scale: 0.9 }}
                     >
                         <BsPinterest />
                     </motion.a>
-                    <motion.a href="https://stackoverflow.com/users/18925589/usman-ahmed" target='_blank' className='text-orange-500 text-[1.7rem] mr-8'
+                    <motion.a href="https://stackoverflow.com/users/18925589/usman-ahmed" target='_blank' className='text-orange-500 text-[1.8rem] mr-8'
                         whileHover={{ y: -3 }}
                         whileTap={{ scale: 0.9 }}
                     >
@@ -100,34 +100,34 @@ const Navbar = () => {
                         <CustomMobileLinks href="/" title="Home" className='' toggle={handleHamClick} />
                         <CustomMobileLinks href="/About" title="About" className='' toggle={handleHamClick} />
                         <CustomMobileLinks href="/Projects" title="Projects" className='' toggle={handleHamClick} />
-                        {/* <CustomMobileLinks href="/Articles" title="Articles" className='' toggle={handleHamClick} /> */}
+                        <CustomMobileLinks href="/Articles" title="Articles" className='' toggle={handleHamClick} />
                     </nav>
                     <nav className='flex items items-center justify-center flex-wrap  mt-4'>
-                        <motion.a href="https://www.twitter.com/usmanahmedgoray" target='_blank' className='text-sky-400 dark:text-sky-600 text-[1.7rem] mr-8 sm:mx-3 xs:mx-1'
+                        <motion.a href="https://www.twitter.com/usmanahmedgoray" target='_blank' className='text-sky-400 dark:text-sky-600 !text-[1.8rem] mr-8 sm:mx-3 xs:mx-1'
                             whileHover={{ y: -3 }}
                             whileTap={{ scale: 0.9 }}
                         >
                             <BsTwitter />
                         </motion.a>
-                        <motion.a href="https://www.github.com/usmanahmedgoray" target='_blank' className='text-[1.7rem] mr-8 border border-light bg-light rounded-full m-2 dark:bg-dark dark:border-dark sm:mx-3 xs:mx-1'
+                        <motion.a href="https://www.github.com/usmanahmedgoray" target='_blank' className='!text-[1.8rem] mr-8 border border-light bg-light rounded-full m-2 dark:bg-dark dark:border-dark sm:mx-3 xs:mx-1'
                             whileHover={{ y: -3 }}
                             whileTap={{ scale: 0.9 }}
                         >
                             <BsGithub />
                         </motion.a>
-                        <motion.a href="https://www.linkedin.com/in/usmanahmedgoray" target='_blank' className='text-blue-600 text-[1.8rem] mr-[1.8rem] sm:mx-3 xs:mx-1 bg-light rounded-2xl w-[27px] h-[27px] '
+                        <motion.a href="https://www.linkedin.com/in/usmanahmedgoray" target='_blank' className='text-blue-600 !text-[1.8rem] mr-[1.8rem] sm:mx-3 xs:mx-1 bg-light rounded-2xl w-[27px] h-[27px] '
                             whileHover={{ y: -3 }}
                             whileTap={{ scale: 0.9 }}
                         >
                             <BsLinkedin />
                         </motion.a>
-                        <motion.a href="https://www.pinterest.com/usmanahmedgoray" target='_blank' className='text-red-600 bg-light rounded-full border-6 border-red-600 text-[1.8rem] mr-8 sm:mx-3 xs:mx-1 '
+                        <motion.a href="https://www.pinterest.com/usmanahmedgoray" target='_blank' className='text-red-600 bg-light rounded-full border-6 border-red-600 !text-[1.8rem] mr-8 sm:mx-3 xs:mx-1 '
                             whileHover={{ y: -3 }}
                             whileTap={{ scale: 0.9 }}
                         >
                             <BsPinterest />
                         </motion.a>
-                        <motion.a href="https://stackoverflow.com/users/18925589/usman-ahmed" target='_blank' className='dark:text-orange-500 text-orange-600 text-[1.7rem] mr-8 sm:mx-3 xs:mx-1'
+                        <motion.a href="https://stackoverflow.com/users/18925589/usman-ahmed" target='_blank' className='dark:text-orange-500 text-orange-600 !text-[1.8rem] mr-8 sm:mx-3 xs:mx-1'
                             whileHover={{ y: -3 }}
                             whileTap={{ scale: 0.9 }}
                         >
