@@ -10,7 +10,7 @@ const Footer = () => {
             <div className='flex items-center lg:py-2'>
                 Build with <span className='text-primary dark:text-priaryDark text-2xl px-1'>&#9825;</span>by&nbsp;<Link href="/" className="underline underline-offset-2">Usman Ahmed</Link>
             </div>
-            <Link href="/">Say Hello</Link>
+            {/* <Link href="/">Say Hello</Link> */}
         </Layout>
     </div>
   )

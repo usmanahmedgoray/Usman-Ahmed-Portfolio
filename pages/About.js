@@ -4,9 +4,10 @@ import AnimatedText from './Component/AnimatedText';
 import Layout from './Layout';
 import Image from 'next/image';
 import ProfilePic from '../public/Images/Profile Picture 03.jpg';
-import Skills from './Component/Skills';
+import {Skills,Web3Skills} from './Component/Skills';
 import Education from './Component/Education';
 import TransitionEffect from './Component/TransitionEffect';
+import Experience from './Component/Experience';
 
 const About = () => {
     return (
@@ -25,15 +26,19 @@ const About = () => {
                                 Biography
                             </h2>
                             <p className="text-lg lg:text-base font-medium text-dark/75  dark:text-light/75">
-                                Hi/Asslam-o-Alaikum, I am Usman Ahmed, a MERN Stack web developer. I am always looking for
-                                new and innovative ways to bring my clients visions to life.
+                            Hello! I am a skilled Software Engineer with a passion for developing robust and scalable Blockchain, Web and Mobile applications. 
                             </p>
                             <p className="text-lg lg:text-base my-4 font-medium text-dark/75  dark:text-light/75">
-                                I’m a graduate in B.S Computer Science . I’m a good self learner and listener. On the side of technical professional skill, I’m a full stack Web Developer, and fine hold on CMS Wordpress.
+                            With 2+ years of experience in the industry, I specialize in Full Stack Web Development and Full Stack Blockchain Developer. My expertise spans across a range of cutting-edge technologies and frameworks, ensuring that I can deliver high-quality solutions tailored to your needs.
                             </p>
                             <p className="text-lg lg:text-base font-medium text-dark/75 dark:text-light/75">
                                 Whether I am working on a project ,I bring my commitment to user-centered thinking to
                                 every project I work on. I look forward to the opportunity to bring my skills and passion to your next project.
+                                <br/>
+                                
+                            </p>
+                            <p className="text-lg lg:text-base mt-4 font-medium text-dark/75 dark:text-light/75">
+                            Full Stack Blockchain and Web Development: Proficient in Blockchain Smart contracts and protocols and DeFi,front-end and back-end development, ensuring seamless integration and functionality.   
                             </p>
                         </div>
                         <div className='col-span-3 border-2 rounded-2xl border-dark dark:border-light h-max relative bg-light p-4 dark:bg-dark dark:text-light xl:col-span-2 lg:order-1 md:col-span-4'>
@@ -43,6 +48,8 @@ const About = () => {
                         </div>
                     </div>
                     <Skills />
+                    <Web3Skills/>
+                    <Experience/>
                     <Education />
                 </Layout>
             </main>
