@@ -90,7 +90,6 @@ const Projects = () => {
       <main className='w-full mb-16 flex flex-col justify-center items-center dark:bg-dark dark:text-light'>
         <Layout className='pt-16'>
           <AnimatedText text="Imagination Trumps Knowledge!" className='text-8xl mb-16 lg:text-7xl sm:text-6xl sm:mb-8 xs:text-4xl' />
-          {/* <RotatingText/> */}
           <AnimatedText text="WEB 2.0 PROJECTS" className='text-6xl text-left ml-3 mt-16 mb-8 lg:text-5xl sm:text-4xl sm:mb-8 xs:text-4xl text-primary dark:text-priaryDark' />
           <div className='grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 xs:gap-x-0 dark:text-light'>
             <div className='col-span-12'>
