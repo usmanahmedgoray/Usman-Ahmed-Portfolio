@@ -14,10 +14,37 @@ import Link from "next/link";
 import AnimatedText from "./Component/AnimatedText";
 import TransitionEffect from "./Component/TransitionEffect";
 import Layout from "./Layout";
-import React from "react";
-import { FeaturedProject01, Project01, Project02, Project03, Project04, Project05, Project06 } from "@/public/Images/Projects/Web3";
+import React, { useState } from "react";
+import {
+  FeaturedProject01,
+  Project01,
+  Project02,
+  Project03,
+  Project04,
+  Project05,
+  Project06,
+} from "@/public/Images/Projects/Web3";
 
 const FramerImage = motion(Image);
+
+const FeaturedProjects = [
+  {
+    tabId: "web2",
+    title: "Web3Geeks",
+    summary:
+      "An online learning platform similar to Udemy, with added blockchain features.Currently working on both front-end and back-end development, developing and integrating blockchain technology to enable course enrollment and other unique features.",
+    image: FeaturedProject1,
+    url: "https://web3-geeks-beige.vercel.app",
+  },
+  {
+    tabId: "web3",
+    title: "The Moonbase",
+    summary:
+      "MoonbaseAlpha is not only uniquely decentralized in it’s Launchpad construct, it also contains the direct vessel to launch via a high velocity rocket charged AMM Exchange. This entire MoonbaseAlpha solution is powered by Arbitrum & zkSync Protocol.",
+    image: FeaturedProject01,
+    url: "https://www.themoonbase.app/",
+  },
+];
 
 const web2Projects = [
   {
@@ -108,9 +135,21 @@ const web3Projects = [
   },
 ];
 
-const Featuredprojects = ({ type, title, summary, img, link }) => {
+const Featuredprojects = ({
+  type,
+  title,
+  summary,
+  img,
+  link,
+  activeTab,
+  tabId,
+}) => {
   return (
-    <article className="w-full flex justify-between items-center rounded-3xl border border-solid relative border-dark bg-light shadow-2xl p-12 rounded-br-2xl dark:bg-dark dark:text-light dark:border-light lg:flex-col lg:p-8 xs:rounded-2xl xs:rounded-br-3xl xs:p-4">
+    <article
+      className={`w-full justify-between items-center rounded-3xl border border-solid relative border-dark bg-light shadow-2xl p-12 rounded-br-2xl dark:bg-dark dark:text-light dark:border-light lg:flex-col lg:p-8 xs:rounded-2xl xs:rounded-br-3xl xs:p-4 ${
+        tabId === activeTab ? "flex" : "hidden"
+      }`}
+    >
       <div className="absolute top-0 -right-3 -z-10 w-[101%] rounded-[2.5rem] rounded-br-2xl h-[102%] bg-dark dark:bg-light xs:-right-2 sm:h-[102%] xs:w-full xs:rounded-[1.5rem]" />
       <Link
         href={link}
@@ -212,6 +251,19 @@ const Project = ({ type, title, img, link }) => {
 };
 
 const Projects = () => {
+  const [activeTab, setActiveTab] = useState("web2");
+
+  const tabs = [
+    { id: "web2", label: "WEB 2.0 PROJECTS" },
+    { id: "web3", label: "WEB 3.0 PROJECTS" },
+  ];
+
+  const handleTabClick = (tabId) => {
+    setActiveTab(tabId);
+  };
+
+  const projectData = activeTab === "web2" ? web2Projects : web3Projects;
+
   return (
     <>
       <Head>
@@ -228,24 +280,63 @@ const Projects = () => {
             text="Imagination Trumps Knowledge!"
             className="text-8xl mb-16 lg:text-7xl sm:text-6xl sm:mb-8 xs:text-4xl"
           />
-          <AnimatedText
-            text="WEB 2.0 PROJECTS"
-            className="text-6xl text-left ml-3 mt-16 mb-8 lg:text-5xl sm:text-4xl sm:mb-8 xs:text-4xl text-primary dark:text-priaryDark"
-          />
+          <div className="flex justify-between items-center mb-16">
+            {tabs?.map((tab) => {
+              return (
+                <motion.div
+                  key={tab.id}
+                  onClick={() => handleTabClick(tab?.id)}
+                  className="cursor-pointer"
+                  initial={{
+                    borderBottomLeftRadius: 0,
+                    borderBottomRightRadius: 0,
+                  }}
+                  animate={{
+                    borderBottomLeftRadius: tab.id === activeTab ? 20 : 0,
+                    borderBottomRightRadius: tab.id === activeTab ? 20 : 0,
+                  }}
+                  transition={{ duration: 0.5, ease: "easeInOut" }}
+                >
+                  <AnimatedText
+                    text={tab?.label}
+                    className={`text-5xl text-left ml-3 mt-16 mb-2 lg:text-5xl sm:text-4xl sm:mb-2 xs:text-4xl ${
+                      tab.id === "web3" ? "text-end" : "text-left"
+                    }`}
+                  />
+                  {tab.id === activeTab && (
+                    <motion.div
+                      layoutId="underline"
+                      className="border-b-8 border-primary dark:border-priaryDark rounded-b-lg"
+                      initial={{ width: 0 }}
+                      animate={{ width: "100%" }}
+                      exit={{ width: 0 }}
+                      transition={{ duration: 0.5, ease: "easeInOut" }}
+                    />
+                  )}
+                </motion.div>
+              );
+            })}
+          </div>
+
           <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 xs:gap-x-0 dark:text-light">
-            
             <div className="col-span-12">
-              <Featuredprojects
-                title="Web3Geeks"
-                summary="An online learning platform similar to Udemy, with added blockchain features.Currently working on both front-end and back-end development, developing and integrating blockchain technology to enable course enrollment and other unique features."
-                link="https://web3-geeks-beige.vercel.app"
-                // github="https://github.com/usmanahmedgoray/Alan-AI-Voice-News-Assistant"
-                type={"Featured Project"}
-                img={FeaturedProject1}
-              />
+              {FeaturedProjects &&
+                FeaturedProjects?.map((project) => {
+                  return (
+                    <Featuredprojects
+                      title={project.title}
+                      summary={project.summary}
+                      link={project.url}
+                      type={"Featured Project"}
+                      img={project.image}
+                      tabId={project.tabId}
+                      activeTab={activeTab}
+                    />
+                  );
+                })}
             </div>
-            {web2Projects &&
-              web2Projects?.map((project) => {
+            {projectData &&
+              projectData?.map((project) => {
                 return (
                   <div key={project.id} className="col-span-6 sm:col-span-12">
                     <Project
@@ -260,19 +351,17 @@ const Projects = () => {
                   </div>
                 );
               })}
-            
           </div>
-          <AnimatedText
+          {/* <AnimatedText
             text="WEB 3.0 PROJECTS"
             className="text-6xl text-left ml-3 mt-16 mb-8 lg:text-5xl sm:text-4xl sm:mb-8 xs:text-4xl text-primary dark:text-priaryDark"
           />
           <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 xs:gap-x-0 dark:text-light">
-            
             <div className="col-span-12">
               <Featuredprojects
                 title="The Moonbase"
                 summary="MoonbaseAlpha is not only uniquely decentralized in it’s Launchpad construct, it also contains the direct vessel to launch via a high velocity rocket charged AMM Exchange. This entire MoonbaseAlpha solution is powered by Arbitrum & zkSync Protocol."
-                link="https://web3-geeks-beige.vercel.app"
+                link="https://www.themoonbase.app/"
                 // github="https://github.com/usmanahmedgoray/Alan-AI-Voice-News-Assistant"
                 type={"Featured Project"}
                 img={FeaturedProject01}
@@ -294,8 +383,7 @@ const Projects = () => {
                   </div>
                 );
               })}
-            
-          </div>
+          </div> */}
         </Layout>
       </main>
     </>
