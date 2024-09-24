@@ -324,6 +324,7 @@ const Projects = () => {
                 FeaturedProjects?.map((project) => {
                   return (
                     <Featuredprojects
+                      key={project.tabId}
                       title={project.title}
                       summary={project.summary}
                       link={project.url}
@@ -352,38 +353,6 @@ const Projects = () => {
                 );
               })}
           </div>
-          {/* <AnimatedText
-            text="WEB 3.0 PROJECTS"
-            className="text-6xl text-left ml-3 mt-16 mb-8 lg:text-5xl sm:text-4xl sm:mb-8 xs:text-4xl text-primary dark:text-priaryDark"
-          />
-          <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 xs:gap-x-0 dark:text-light">
-            <div className="col-span-12">
-              <Featuredprojects
-                title="The Moonbase"
-                summary="MoonbaseAlpha is not only uniquely decentralized in it’s Launchpad construct, it also contains the direct vessel to launch via a high velocity rocket charged AMM Exchange. This entire MoonbaseAlpha solution is powered by Arbitrum & zkSync Protocol."
-                link="https://www.themoonbase.app/"
-                // github="https://github.com/usmanahmedgoray/Alan-AI-Voice-News-Assistant"
-                type={"Featured Project"}
-                img={FeaturedProject01}
-              />
-            </div>
-            {web3Projects &&
-              web3Projects?.map((project) => {
-                return (
-                  <div key={project?.id} className="col-span-6 sm:col-span-12">
-                    <Project
-                      title={project?.title}
-                      summary="A professional portfolio website using React JS, Framer-motion, and Styled-components. It has smooth 
-              page transitions, cool background effects, unique design and it is mobile responsive."
-                      // github="https://www.github.com/usmanahmedgoray"
-                      link={project.url}
-                      img={project.image}
-                      type="Featured project"
-                    />
-                  </div>
-                );
-              })}
-          </div> */}
         </Layout>
       </main>
     </>
