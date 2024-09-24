@@ -1,14 +1,11 @@
+import { FeaturedProject1, Project1, Project2, Project3, Project4, Project5, Project6 } from '@/public/Images/Projects'
+import { motion } from 'framer-motion'
 import Head from 'next/head'
-import React from 'react'
-import Layout from './Layout'
-import AnimatedText from './Component/AnimatedText'
 import Image from 'next/image'
 import Link from 'next/link'
-import { BsGithub } from "react-icons/bs";
-import { FeaturedProject1, FeaturedProject2, Project1, Project2, Project3, Project4, Project5, Project6 } from '@/public/Images/Projects'
-import { motion } from 'framer-motion'
+import AnimatedText from './Component/AnimatedText'
 import TransitionEffect from './Component/TransitionEffect'
-import RotatingText from './Component/RotatingText'
+import Layout from './Layout'
 
 const FramerImage = motion(Image)
 
