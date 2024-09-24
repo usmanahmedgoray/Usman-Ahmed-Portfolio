@@ -4,7 +4,7 @@ import AnimatedText from './Component/AnimatedText';
 import Layout from './Layout';
 import Image from 'next/image';
 import ProfilePic from '../public/Images/Profile Picture 03.jpg';
-import {Skills,Web3Skills} from './Component/Skills';
+import Skills,{Web3Skills} from './Component/Skills';
 import Education from './Component/Education';
 import TransitionEffect from './Component/TransitionEffect';
 import Experience from './Component/Experience';

@@ -191,7 +191,7 @@ const Skills = () => {
     </>
   );
 };
-const Web3Skills = () => {
+export const Web3Skills = () => {
   return (
     <>
       <h2 className="font-bold text-8xl mt-40 w-full text-center md:text-6xl sm:text-4xl md:mt-32">
@@ -220,7 +220,7 @@ const Web3Skills = () => {
   );
 };
 
-export {
-    Web3Skills,
-    Skills
-};
+
+export default Skills;
+
+

@@ -1,13 +1,13 @@
-import React, { useState } from 'react'
-import Link from 'next/link'
-import Logo from './Logo'
-import { useRouter } from 'next/router'
-import { BsTwitter, BsGithub, BsLinkedin, BsPinterest, BsStackOverflow } from "react-icons/bs";
-import { MdOutlineLightMode } from "react-icons/md";
-import { GiNightSleep } from "react-icons/gi";
 import { motion } from 'framer-motion';
-import useThemeSwitcher from './Hooks/useThemeSwitcher';
+import Link from 'next/link';
+import { useRouter } from 'next/router';
+import { useState } from 'react';
+import { BsGithub, BsLinkedin, BsPinterest, BsStackOverflow, BsTwitter } from "react-icons/bs";
+import { GiNightSleep } from "react-icons/gi";
+import { MdOutlineLightMode } from "react-icons/md";
 import Hamburger from './Hamburger';
+import useThemeSwitcher from './Hooks/useThemeSwitcher';
+import Logo from './Logo';
 
 const CustomLinks = ({ href, title, className = "" }) => {
     const router = useRouter()
