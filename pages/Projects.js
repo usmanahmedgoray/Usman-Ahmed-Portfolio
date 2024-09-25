@@ -202,7 +202,7 @@ const Featuredprojects = ({
 const Project = ({ type, title, img, link }) => {
   return (
     <>
-      <article className="w-full flex min-h-[485px] flex-col justify-start items-center rounded-3xl border border-solid relative border-dark bg-light shadow-2xl p-6 rounded-br-2xl dark:bg-dark dark:text-light dark:border-light xs:p-4">
+      <article className="w-full flex 2xl:min-h-[485px] md:min-h-max flex-col justify-start items-center rounded-3xl border border-solid relative border-dark bg-light shadow-2xl p-6 rounded-br-2xl dark:bg-dark dark:text-light dark:border-light xs:p-4">
         <div className="absolute top-0 -right-3 -z-10 w-[101%] rounded-[2.5rem] rounded-br-2xl h-[102%] bg-dark dark:bg-light xs:-right-2 sm:h-[102%] xs:w-full xs:rounded-[1.5rem]" />
         <Link
           href={link}
@@ -299,7 +299,7 @@ const Projects = () => {
                 >
                   <AnimatedText
                     text={tab?.label}
-                    className={`text-5xl text-left ml-3 mt-16 mb-2 lg:text-5xl sm:text-4xl sm:mb-2 xs:text-4xl ${
+                    className={`lg:text-3xl 2xl:text-5xl xs:ml-0 xl:text-4xl md:text-2xl xs:text-base sm:text-lg text-left ml-3 mt-16 mb-2  sm:mb-2 ${
                       tab.id === "web3" ? "text-end" : "text-left"
                     }`}
                   />
