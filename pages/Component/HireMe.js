@@ -1,5 +1,5 @@
 import React from 'react';
-import Icons from './Icons'
+import Icons, { UpdatedIcons } from './Icons'
 import Link from 'next/link';
 
 const HireMe = () => {
