@@ -1,33 +1,8 @@
 import { useScroll, motion } from "framer-motion";
 import React, { useRef } from "react";
 import LiIcons from "./LiIcons";
+import { educationalData } from "@/utils/utils";
 
-const educationalData = [
-  {
-    key: 1,
-    Level: "Bachelor",
-    Degree: "B.S Computer Science",
-    years: "09/2019 - 09/2023",
-    School: "Government College University, Faisalabad.",
-    Marks: "3.43/4",
-  },
-  {
-    key: 2,
-    Level: "Intermediate",
-    Degree: "Fsc (pre-Engineering)",
-    years: "08/2017 - 08/2019",
-    School: "Superior College Shahkot, Nankana Sahib",
-    Marks: "71.72%",
-  },
-  {
-    key: 3,
-    Level: "Matriculation",
-    Degree: "Matric",
-    years: "04/2015 - 07/2017",
-    School: "Government Abu al Khair high School Shahkot, Nankana Shahib",
-    Marks: "72.36%",
-  },
-];
 
 const Detail = ({ Level, Degree, years, School, Board, Marks }) => {
   const ref = useRef(null);
@@ -104,7 +79,6 @@ const Education = () => {
                 />
               );
             })}
-          
         </ul>
       </div>
     </div>

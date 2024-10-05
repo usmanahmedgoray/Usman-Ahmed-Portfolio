@@ -1,36 +1,9 @@
 import { useScroll, motion } from "framer-motion";
 import React, { useRef } from "react";
 import LiIcons from "./LiIcons";
+import { experienceData } from "@/utils/utils";
 
-const experienceData = [
-  {
-    id: 1,
-    designation: "Software Engineer",
-    company: "@Netixsol",
-    companyUrl: "https://www.netixsol.com/",
-    desc: "As a Junior Software Engineer, I have extensive experience working on projects related to Web3 and Blockchain. My role involved solving complex problems for Web3-based web applications, contributing to both front-end and back-end development, and integrating back-end services with smart contracts.",
-    years: "10/2023 - present",
-    city: "Faisalabad",
-  },
-  {
-    id: 2,
-    designation: "Associate Software Engineer",
-    company: "@FEAT Technologies",
-    companyUrl: "https://www.linkedin.com/company/feat-technologies-private-limited/?originalSubdomain=pk",
-    desc: "Developed and implemented a software solution for the food industry based on HACCP (Hazard Analysis & Critical Control Point) principles. The project included designing a comprehensive flowchart and Entity-Relationship (ER) diagram and developing a full-stack MERN (MongoDB, Express.js, React.js, Node.js) application to automate and digitize food chain processes.",
-    years: "1/2023 - 10/2023",
-    city: "Faisalabad",
-  },
-  {
-    id: 3,
-    designation: "Junior Software Engineer",
-    company: "@Devixsol",
-    companyUrl: "https://www.devixsol.com/",
-    desc: "Developed both front-end and back-end, integrated them to provide a seamless user experience. The platform allows companies to register, receive credits based on pricing plans, post job openings, and administer online tests to candidates.",
-    years: "5/2022 - 12/2022",
-    city: "Faisalabad",
-  },
-];
+
 
 const Detail = ({ designation, city, years, company, desc, companyUrl }) => {
   const ref = useRef(null);
