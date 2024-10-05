@@ -1,6 +1,5 @@
-import React from 'react';
-import Icons, { UpdatedIcons } from './Icons'
 import Link from 'next/link';
+import Icons from './Icons';
 
 const HireMe = () => {
   return (

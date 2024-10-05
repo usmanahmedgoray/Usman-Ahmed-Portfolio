@@ -4,7 +4,7 @@ import Layout from "./Layout";
 import AnimatedText from "./Component/AnimatedText";
 import Link from "next/link";
 import Image from "next/image";
-
+import ProfilePic from "../public/Images/Profile Picture 03.jpg";
 import { motion, useMotionValue } from "framer-motion";
 import TransitionEffect from "./Component/TransitionEffect";
 import { ArticleData, FeaturedArticleData } from "@/utils/utils";
@@ -107,9 +107,39 @@ const Articles = () => {
     <>
       <Head>
         <title>Usman Ahmed | Articles Page</title>
+        <meta name="title" content="Usman Ahmed" />
         <meta
           name="description"
-          content="This is Usman Ahmed Goraya Portfolio site and this is Articles page of Usman Ahmed portfolio page "
+          content="As a skilled full-stack Blockchain and Web developer, I am dedicated to turning ideas into innovative Web Applications, DeFi,DAO and NFT Dapps and Solidity Smart Contracts and Solana Blockchain programs . Explore my latest projects and articles, showcasing my expertise in Blockchain and Web Development"
+        />
+
+        {/* <!-- Open Graph / Facebook --> */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://usmanahmedgoray.vercel.app/" />
+        <meta property="og:title" content="Usman Ahmed" />
+        <meta
+          property="og:description"
+          content="As a skilled full-stack Blockchain and Web developer, I am dedicated to turning ideas into innovative Web Applications, DeFi,DAO and NFT Dapps and Solidity Smart Contracts and Solana Blockchain programs . Explore my latest projects and articles, showcasing my expertise in Blockchain and Web Development"
+        />
+        <meta
+          property="og:image"
+          content={ProfilePic}
+        />
+
+        {/* <!-- Twitter --> */}
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta
+          property="twitter:url"
+          content="https://usmanahmedgoray.vercel.app/"
+        />
+        <meta property="twitter:title" content="Usman Ahmed" />
+        <meta
+          property="twitter:description"
+          content="As a skilled full-stack Blockchain and Web developer, I am dedicated to turning ideas into innovative Web Applications, DeFi,DAO and NFT Dapps and Solidity Smart Contracts and Solana Blockchain programs . Explore my latest projects and articles, showcasing my expertise in Blockchain and Web Development"
+        />
+        <meta
+          property="twitter:image"
+          content={ProfilePic}
         />
       </Head>
       <TransitionEffect />

@@ -15,7 +15,7 @@ const index = () => {
     <>
       <Head>
         <title>Usman Ahmed</title>
-        <meta name='description' content='Usman Ahmed Goraya is MERN Stack Web Developer' />
+        <meta name='description' content='As a skilled full-stack Blockchain and Web developer, I am dedicated to turning ideas into innovative Web Applications, DeFi,DAO and NFT Dapps and Solidity Smart Contracts and Solana Blockchain programs . Explore my latest projects and articles, showcasing my expertise in Blockchain and Web Development' />
       </Head>
       <TransitionEffect/>
       <main className='flex items-center text-dark min-h-screen w-full dark:text-light'>

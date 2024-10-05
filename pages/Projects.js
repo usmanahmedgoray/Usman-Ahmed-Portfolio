@@ -8,6 +8,7 @@ import {
   Project6,
 } from "@/public/Images/Projects";
 import { motion } from "framer-motion";
+import ProfilePic from "../public/Images/Profile Picture 03.jpg";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
@@ -268,10 +269,34 @@ const Projects = () => {
     <>
       <Head>
         <title>Usman Ahmed | Projects</title>
+        <meta name="title" content="Usman Ahmed" />
         <meta
           name="description"
-          content="This is Usman Ahmed Porfolio next app project page"
+          content="As a skilled full-stack Blockchain and Web developer, I am dedicated to turning ideas into innovative Web Applications, DeFi,DAO and NFT Dapps and Solidity Smart Contracts and Solana Blockchain programs . Explore my latest projects and articles, showcasing my expertise in Blockchain and Web Development"
         />
+
+        {/* <!-- Open Graph / Facebook --> */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://usmanahmedgoray.vercel.app/" />
+        <meta property="og:title" content="Usman Ahmed" />
+        <meta
+          property="og:description"
+          content="As a skilled full-stack Blockchain and Web developer, I am dedicated to turning ideas into innovative Web Applications, DeFi,DAO and NFT Dapps and Solidity Smart Contracts and Solana Blockchain programs . Explore my latest projects and articles, showcasing my expertise in Blockchain and Web Development"
+        />
+        <meta property="og:image" content={ProfilePic} />
+
+        {/* <!-- Twitter --> */}
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta
+          property="twitter:url"
+          content="https://usmanahmedgoray.vercel.app/"
+        />
+        <meta property="twitter:title" content="Usman Ahmed" />
+        <meta
+          property="twitter:description"
+          content="As a skilled full-stack Blockchain and Web developer, I am dedicated to turning ideas into innovative Web Applications, DeFi,DAO and NFT Dapps and Solidity Smart Contracts and Solana Blockchain programs . Explore my latest projects and articles, showcasing my expertise in Blockchain and Web Development"
+        />
+        <meta property="twitter:image" content={ProfilePic} />
       </Head>
       <TransitionEffect />
       <main className="w-full mb-16 flex flex-col justify-center items-center dark:bg-dark dark:text-light">
