@@ -1,12 +1,12 @@
 import {
-  paginationComponent,
-  loadingScreen,
   formValidation,
-  modalComponent,
   higherOrderComponent,
+  loadingScreen,
+  modalComponent,
+  paginationComponent,
   redux,
-  todoList,
   smoothScrolling,
+  todoList,
 } from "@/public/Images/Articles/Index";
 
 export const FeaturedArticleData = [
@@ -257,6 +257,72 @@ export const experienceData = [
     desc: "Developed both front-end and back-end, integrated them to provide a seamless user experience. The platform allows companies to register, receive credits based on pricing plans, post job openings, and administer online tests to candidates.",
     years: "5/2022 - 12/2022",
     city: "Faisalabad",
+  },
+];
+export const certificateData = [
+  {
+    id: 1,
+    title: "Critical Thinking",
+    certificateCompany: "@URCOURS",
+    certificateURL:"/Certificates/Criticalthinking.pdf",
+    desc: "I have demonstrated exceptional skills in web development technologies. My project work highlighted a deep understanding of modern frontend frameworks and backend integration. My attention to detail in UI/UX design was especially notable.",
+    issueDate: "June 15, 2023",
+  },
+  {
+    id: 2,
+    title: "Graphic Design",
+    certificateCompany: "@DSTP",
+    certificateURL: "/Certificates/DSTP_Certificate_7VHXKXXXB.pdf",
+    desc: "I successfully completed the Graphic Design course under the DigiSkills Training Program. The training took place during Batch-11 from October 2021 to December 2021, and my certificate was officially issued on January 12, 2022. This demonstrates my foundation in essential design principles and tools, proving my competence in graphic design.",
+    issueDate: "January 12, 2022",
+  },
+  {
+    id: 3,
+    title: "Foundation of User Experience Design",
+    certificateCompany: "@COUSERA/GOOGLE",
+    certificateURL: "/Certificates/UI.pdf",
+    desc: "I have been recognized in a certificate, though the document provided only displays my name, Usman Ahmed, without additional details. While this shows my achievement, the lack of more specific information limits a comprehensive review. However, this still reflects my commitment to growth and professional development.",
+    issueDate: "June 3, 2022",
+  },
+  {
+    id: 4,
+    title: "MongoDB Proof of Completion",
+    certificateCompany: "@MONGODB/UNIVERSITY",
+    certificateURL: "/Certificates/MongoDB-completion.pdf",
+    desc: "I completed MongoDB's course and received the completion certificate. This training has helped me solidify my understanding of database management using MongoDB, a powerful NoSQL database solution. I'm excited to leverage this expertise in my future projects, particularly when working with scalable, data-driven applications. The hands-on experience gained through this course will be instrumental in building more efficient and optimized systems, both in Web 2.0 and Web 3.0 environments",
+    issueDate: "Feb 2, 2024",
+  },
+  {
+    id: 5,
+    title: "MongoDB Schema Design Patterns",
+    certificateCompany: "@MONGODB/UNIVERSITY",
+    certificateURL: "/Certificates/MongoDB-completion-SchemaPattern.pdf",
+    desc: "I earned two valuable certifications from MongoDB: one for completing their core course and another focused on Schema Design Patterns. These certifications have deepened my understanding of MongoDB as a robust NoSQL solution, particularly in designing optimal data models for scalability and efficiency. The Schema Patterns course was especially insightful, providing strategies for creating flexible and performant databases. ",
+    issueDate: "Feb 4, 2024",
+  },
+  {
+    id: 6,
+    title: "Tecnical Domain",
+    certificateCompany: "@NFTP",
+    certificateURL: "/Certificates/NFTP.pdf",
+    desc: "I recently completed an advanced course focused on [specific technical domain], adding another significant credential to my portfolio. This certification has provided in-depth knowledge of [specific technologies or concepts], enhancing my ability to tackle complex challenges in modern software development. The hands-on training and practical projects included in this program allowed me to apply the concepts directly to real-world scenarios. I'm eager to incorporate these new skills into upcoming Web 3.0 and Web 2.0 projects, especially where cutting-edge technologies are essential.",
+    issueDate: "Sep 10, 2021",
+  },
+  {
+    id: 7,
+    title: "Non-Voilent",
+    certificateCompany: "@URCOURS",
+    certificateURL: "/Certificates/Non-violent.pdf",
+    desc: "I’m proud to have earned my latest certification from URCOURS in non-violent communication. This program has enhanced my ability to navigate challenging conversations with empathy and understanding, which is vital not only in personal interactions but also in professional settings. The skills I’ve developed through this course will help me foster better collaboration, resolve conflicts more effectively, and create a more positive environment in team-based projects.",
+    issueDate: "Dec 8, 2020",
+  },
+  {
+    id: 8,
+    title: "Intro to Front End Development",
+    certificateCompany: "@COURSERA/META",
+    certificateURL: "/Certificates/Meta.pdf",
+    desc: "I recently completed the 'Intro to Frontend Development' course offered by Coursera in collaboration with Meta. This course has been an invaluable resource for enhancing my foundational knowledge in frontend development. It covered essential topics such as HTML, CSS, and JavaScript, providing practical exercises that allowed me to build real-world projects.The hands-on approach and guidance from industry experts made complex concepts much more approachable. Additionally, I learned about responsive design principles, which are crucial for creating user-friendly interfaces across devices. This certification not only boosts my technical skills but also prepares me to contribute effectively to frontend projects in both Web 2.0 and Web 3.0 environments.",
+    issueDate: "March 23, 2023",
   },
 ];
 

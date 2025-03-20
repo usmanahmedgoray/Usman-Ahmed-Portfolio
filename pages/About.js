@@ -8,6 +8,7 @@ import Skills, { Web3Skills } from "./Component/Skills";
 import Education from "./Component/Education";
 import TransitionEffect from "./Component/TransitionEffect";
 import Experience from "./Component/Experience";
+import Certificate from "./Component/Certificate&Awards";
 
 const About = () => {
   return (
@@ -102,6 +103,7 @@ const About = () => {
           <Web3Skills />
           <Experience />
           <Education />
+          <Certificate/>
         </Layout>
       </main>
     </>
