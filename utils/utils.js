@@ -231,12 +231,21 @@ export const Web3Data = [
 
 export const experienceData = [
   {
+    id: 0,
+    designation: "Software Engineer",
+    company: "@FlowInBound",
+    companyUrl: "https://migrio.com/",
+    desc: "As a Software Engineer, I am developing Migrio, a SaaS platform that enables users to connect with freelance experts offering professional services in immigration, travel, and tour bookings.",
+    years: "3/2025 - present",
+    city: "Faisalabad",
+  },
+  {
     id: 1,
     designation: "Software Engineer",
     company: "@Netixsol",
     companyUrl: "https://www.netixsol.com/",
-    desc: "As a Junior Software Engineer, I have extensive experience working on projects related to Web3 and Blockchain. My role involved solving complex problems for Web3-based web applications, contributing to both front-end and back-end development, and integrating back-end services with smart contracts.",
-    years: "10/2023 - present",
+    desc: "As a Software Engineer, I have extensive experience working on projects related to Web3 and Blockchain. My role involved solving complex problems for Web3-based web applications, contributing to both front-end and back-end development, and integrating back-end services with smart contracts.",
+    years: "10/2023 - 2/2025",
     city: "Faisalabad",
   },
   {
